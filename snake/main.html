@@ -48,7 +48,7 @@ function setup() {
     balls[balls.length] = bb
   }
 
-  var tailCount = 10
+  var tailCount = 50
 
 
   //var path = new util.path(tailCount,new util.point2D(1024*2/2,768*2/2))
@@ -61,7 +61,7 @@ function setup() {
   var parent = b
 
   scene.onMouseDown(function(){
-    b.velocity = new util.velocity(b.v,util.transformV(b.v.getDirAngle(),0),300)
+    //b.velocity = new util.velocity(b.v,util.transformV(b.v.getDirAngle(),0),300)
   })
 
 
@@ -79,7 +79,7 @@ function setup() {
     null,
     null,
     function(dir){
-    b.velocity = new util.velocity(b.v,util.transformV(dir,10*30),300)
+    b.velocity = new util.velocity(b.v,util.transformV(dir,10*30),100)
     }
   );
 
